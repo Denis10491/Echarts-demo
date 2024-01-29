@@ -19,10 +19,11 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 900px;
   height: 100%;
 }
 .main > * {
   margin: 0 0 20px;
+  width: 100%;
 }
 </style>

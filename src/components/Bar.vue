@@ -143,20 +143,25 @@ const option = ref({
     font-size: 26px;
     text-transform: uppercase;
 }
-.info__item-data {
-    margin: 20px 0;
-}
 .content__info {
     margin: 30px 0 0;
     display: flex;
+    justify-content: space-between;
 }
 .info__item {
-    margin: 0 30px 0 0;
+    padding: 10px 0;
+}
+.info__item:not(:last-child) {
+    padding: 10px 40px 10px 0;
+    border-right: 2px solid #3c3c3c;
 }
 .info__item-title {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 15px;
     color: #93969C;
+}
+.info__item-data {
+    margin: 20px 0 0;
 }
 </style>
