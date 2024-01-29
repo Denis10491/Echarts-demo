@@ -213,10 +213,13 @@ const option = ref({
             "show": true,
             "lineStyle": {
                 "color": [
-                    "#818281b6"
+                    "#292829"
                 ]
             }
         },
+        axisLabel: {
+            fontSize: 16
+        }
     },
     color: [
         '#0077F7', '#13D6FF'
@@ -256,7 +259,7 @@ const option = ref({
 
 <style scoped>
 .chart-line {
-  background: #292829;
+  background: #1B1B1E;
   border-radius: 8px;
   padding: 40px 0 0;
 }

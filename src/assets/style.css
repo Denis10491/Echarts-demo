@@ -26,7 +26,7 @@ body {
 }
 
 .chart {
-  background: #292829;
+  background: #1B1B1E;
   width: inherit;
   height: 400px;
   border-radius: 8px;
@@ -81,14 +81,41 @@ li {
   list-style: none;
 }
 
+/* Custom Tooltip */
 .tooltip {
   padding: 0 10px 10px !important;
 }
+.tooltip > div > div > div {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+}
+.tooltip > div > div > div > div {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 10px 0 0 !important;
+}
+.tooltip > div > div > div > div > div {
+  position: relative;
+  width: 35px;
+  height: 100%;
+}
+.tooltip > div > div > div > div > div > span:nth-child(1) {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+.tooltip > div > div > div > div > div > span:nth-child(2) {
+  position: absolute;
+  top: 10%;
+}
+.tooltip > div > div > div > div > div > span:nth-child(3) {
+  position: absolute;
+  bottom: 10%;
+}
 .tooltip > div > div > div:nth-child(1) {
   display: none;
-}
-.tooltip > div > div > div:nth-child(2) {
-  margin: 0;
 }
 .tooltip > div > div > div > div:nth-child(4) {
   display: none;
